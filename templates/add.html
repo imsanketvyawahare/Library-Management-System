@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a Entry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Add Details :</h1>
+    <form action="{% url 'add' %}" method="post">
+        {% csrf_token %}
+        <label for="book-id">Book Id: </label><input type="text" name="book-id" placeholder="Book Id" required>
+        <br>
+        <label for="book-id">Book Name: </label><input type="text" name="book-name" placeholder="Book Name" required>
+        <br>
+        <label for="book-id">Book Author: </label><input type="text" name="book-author" placeholder="Book Author" required>
+        <br>
+        <label for="book-id">Publish Date: </label><input type="date" class="datepicker" name="date" placeholder="Date of Publishing" required>
+        <br>
+        <label for="book-id">Book Price: </label><input type="number" name="book-price" placeholder="Price Of Book" required>
+        <br>
+        <button type="submit" class="waves-effect waves-light btn-large" style="color: white;">Add</button>
+        <a class="waves-effect waves-light btn-large" href="{% url 'home' %}" style="text-decoration: none;color: white;">Back to Home</a>
+    </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

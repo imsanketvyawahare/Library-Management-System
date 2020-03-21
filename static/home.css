@@ -1,0 +1,26 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+h1{
+    background-color:#26A69A;
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+th, td {
+    padding: 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
